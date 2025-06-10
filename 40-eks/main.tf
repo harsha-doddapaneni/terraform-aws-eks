@@ -8,8 +8,6 @@ resource "aws_key_pair" "eks" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-
-
   cluster_name    = "${var.project_name}-${var.environment}"
   cluster_version = "1.31"
 
