@@ -5,7 +5,7 @@ resource "aws_key_pair" "eks" {
   public_key = file("~/.ssh/eks.pub")
   # ~ means windows home directory
 }
-          
+           
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
 
